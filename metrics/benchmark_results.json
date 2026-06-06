@@ -1,0 +1,22 @@
+{
+  "model": "gpt-4o-2024-05-13",
+  "eval_date": "2024-05-28",
+  "benchmarks": {
+    "hotpotqa": {"f1": 0.74, "exact_match": 0.61, "num_samples": 500},
+    "triviaqa": {"exact_match": 0.81, "num_samples": 500},
+    "gsm8k": {"accuracy": 0.88, "num_samples": 200},
+    "mmlu": {"5shot_accuracy": 0.79, "num_samples": 1000},
+    "humaneval": {"pass_at_1": 0.82, "pass_at_10": 0.94, "num_samples": 164}
+  },
+  "hallucination": {
+    "nli_hallucination_rate": 0.062,
+    "llm_judge_hallucination_rate": 0.058,
+    "combined_rate": 0.060
+  },
+  "ragas": {
+    "faithfulness": 0.91,
+    "answer_relevancy": 0.88,
+    "context_precision": 0.85
+  },
+  "throughput_samples_per_min": 340
+}

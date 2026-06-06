@@ -1,0 +1,10 @@
+version: "3.9"
+services:
+  eval_runner:
+    build: .
+    command: python -m src.runners.benchmark --suite full --model gpt-4o --wandb
+    environment:
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - WANDB_API_KEY=${WANDB_API_KEY}
+    volumes:
+      - ./metrics:/app/metrics
