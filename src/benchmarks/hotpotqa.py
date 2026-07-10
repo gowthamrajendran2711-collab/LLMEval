@@ -1,4 +1,3 @@
-"""HotpotQA multi-hop reasoning benchmark"""
 from datasets import load_dataset
 from openai import OpenAI
 
