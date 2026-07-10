@@ -1,4 +1,4 @@
-"""GSM8K math reasoning benchmark"""
+
 from datasets import load_dataset
 from openai import OpenAI
 import re
