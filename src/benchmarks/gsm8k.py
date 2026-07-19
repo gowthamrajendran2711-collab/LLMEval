@@ -1,4 +1,3 @@
-
 from datasets import load_dataset
 from openai import OpenAI
 import re
@@ -31,4 +30,4 @@ class GSM8KBenchmark:
 
     def _extract_answer(self, text: str) -> str:
         m = re.search(r"####\s*([\d,\.]+)", text) or re.search(r"answer is ([\d,\.]+)", text, re.I)
-        return m.group(1).replace(",", "") if m else ""
+        return m.group(1).replace(",", "") if m else ''
