@@ -1,4 +1,4 @@
-"""Weights & Biases reporter for LLM eval results"""
+
 import wandb
 from pathlib import Path
 import json
